@@ -5,13 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SymptomFactory {
-	
-	
-	
-	
-	
 	private static List<Symptom> sortuak = new LinkedList<>();
-	
 	
 	public Symptom createSymptom(String symptomName) {
 		Symptom sm=null;
@@ -19,6 +13,8 @@ public class SymptomFactory {
 		while(sm==null && i< sortuak.size()) {
 			if (sortuak.get(i).getName().equals(symptomName)) {
 				sm= sortuak.get(i);
+			}else{
+				i++;
 			}
 		}
 		if (sm!=null) {
@@ -62,8 +58,5 @@ public class SymptomFactory {
 			    }
 			    return null;	
 		}
-	   	
-		
 	}
-
 }

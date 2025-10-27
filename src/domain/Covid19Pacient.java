@@ -63,9 +63,7 @@ public class Covid19Pacient extends Observable {
 			setChanged();
 			notifyObservers();
 		}
-		
 		return s;
-	
 	}
 
 	public Symptom removeSymptomByName(String symptomName) {
