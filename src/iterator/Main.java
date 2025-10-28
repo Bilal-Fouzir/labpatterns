@@ -12,6 +12,7 @@ import domain.Symptom;
 	public class Main {
 
 		public static void main(String[] args) {
+			
 			Covid19Pacient p=new Covid19Pacient("Ane", 29);
 			Symptom s1= new Symptom("s1", 10, 10);
 			Symptom s2= new Symptom("s2", 10, 10);
